@@ -1,8 +1,19 @@
+/*changes the root font-size to 16px for color contras*/
+html{
+  font-size: 16px;
+}
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  /* changes grey(128,128,128)-> (150,150,150) for colour contrast(Comfort level AAA - ratio 7.1:1 (black on grey)) */
+  /*background-color: grey;*/
+  background-color: rgb(160,160,160);
   margin: 0;
   padding: 0;
+}
+ /* changes grey(117,117,117)-> (85,85,85) for colour contrast(Comfort level AAA - ratio 7.1:1 (grey on white)) */
+::placeholder{
+  color: rgb(85,85,85);
 }
 
 h1,
@@ -13,6 +24,11 @@ h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
+/*changes the font-size to 19px for color contras (7.1:1)*/
+button, label, li, p, input, footer{
+  font-size: 1.2rem;
+}
+
 
 .container {
   max-width: 1080px;
